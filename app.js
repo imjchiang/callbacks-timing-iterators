@@ -62,3 +62,21 @@ function subtractNumbers(num1, num2)
 }
 
 console.log(calculator(5, 77, addNumbers, subtractNumbers));
+
+function superHero(callbackOne, callbackTwo)
+{
+    let superPowers = "The super hero has the superpowers " + callbackOne() + " and " + callbackTwo();
+    return superPowers;
+}
+
+function superPowerOne()
+{
+    return "Mind Reading";
+}
+
+function superPowerTwo()
+{
+    return "Invisibility";
+}
+
+console.log(superHero(superPowerOne, superPowerTwo));
