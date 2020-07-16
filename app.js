@@ -95,10 +95,10 @@ function blastOff()
 
 setTimeout(blastOff, 5000);
 
-function printName()
+function printName(name)
 {
-    let name = "Josh";
+    //name = "Josh";
     console.log(name);
 }
 
-setTimeout(printName, 5000);
+setTimeout(function(){printName("Josh");}, 5000);
