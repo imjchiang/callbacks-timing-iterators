@@ -93,7 +93,7 @@ function blastOff()
     console.log("BLAST OFF!!");
 }
 
-setTimeout(blastOff, 5000);
+//setTimeout(blastOff, 5000);
 
 function printName(name)
 {
@@ -101,4 +101,37 @@ function printName(name)
     console.log(name);
 }
 
-setTimeout(function(){printName("Josh");}, 5000);
+//setTimeout(function(){printName("Josh");}, 5000);
+
+//Iterators
+const collectables = ["Bomag", "CMI Corp", "Wirtgen", "Catepillar"];
+
+collectables.forEach(function(element){
+    console.log(element);
+} );
+
+collectables.forEach(element => {
+    if (element.length > 6)
+    {
+        console.log(element);
+    }
+} );
+
+//map
+const someNumbers = [24, 65, 347, 34];
+
+const addFive = someNumbers.map(element => {
+    return element + 5;
+} );
+
+console.log(addFive);
+
+//filter
+const filteredNums = someNumbers.filter(element => {
+    if (element > 50)
+    {
+        return element;
+    }
+});
+
+console.log(filteredNums);
