@@ -80,3 +80,25 @@ function superPowerTwo()
 }
 
 console.log(superHero(superPowerOne, superPowerTwo));
+
+
+function blastOff()
+{
+    let num = 0;
+
+    for (let i = 10; i >= num; i--)
+    {
+        console.log(i);
+    }
+    console.log("BLAST OFF!!");
+}
+
+setTimeout(blastOff, 5000);
+
+function printName()
+{
+    let name = "Josh";
+    console.log(name);
+}
+
+setTimeout(printName, 5000);
